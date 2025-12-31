@@ -24,7 +24,8 @@ $foto_sampul = $_FILES['foto_sampul']['name'];
 $foto_sampul_temp = $_FILES['foto_sampul']['tmp_name'];
 
 $rt_panitia = $_POST['rt_panitia'];
-a
+
+
 if ($_SESSION["rt_panitia"] = "RW"){
     $sql_cari = "SELECT id_sesi FROM sesi_pemilihan ORDER BY id_sesi ASC LIMIT 1 OFFSET ?";
     $stmt_cari = $conn->prepare($sql_cari);
